@@ -1,0 +1,66 @@
+package com.program.menu;
+
+import com.program.commands.*;
+import com.program.manager.BankManager;
+import com.program.manager.FileManager;
+
+import java.util.*;
+
+public class ConsoleMenu {
+
+    private Map<String, Command> commands = new HashMap<>();
+    private BankManager bankManger;
+    private FileManager fileManager;
+    private Scanner scanner;
+
+    public ConsoleMenu() {
+        this.fileManager = new FileManager();
+        this.bankManger = new BankManager();
+        this.scanner = new Scanner(System.in);
+
+        commands.put("add", new AddDepositCommand());
+        commands.put("del", new DeleteDepositCommand());
+        commands.put("load", new LoadDepositCommand());
+        commands.put("save", new SaveToFileCommand());
+        commands.put("search", new SearchDepositCommand());
+        commands.put("sort", new SortDepositCommand());
+        commands.put("view", new ViewListDepositCommand());
+        commands.put("help", new HelpCommand(commands));
+
+    }
+
+    public void run(){
+        System.out.println("Ласкаво просимо до консольної системи внесків!!!");
+        System.out.println("Введіть команду help щоб побачити список усіх команд: ");
+
+        boolean isRunning = true;
+
+        while (isRunning) {
+
+            System.out.print(">>> ");
+
+            String input = scanner.nextLine().trim();
+
+            if (input.isEmpty()) continue;
+
+            String[] commandArgs = input.split(" ", 2);
+            String commandName = commandArgs[0];
+            Command command = commands.get(commandName);
+            String param = (commandArgs.length > 1) ? commandArgs[1] : "";
+
+            if (command != null) {
+                try {
+                    command.execute(param);
+                } catch (Exception e) {
+                    System.out.println("Помилка при виконанні команди: " + e.getMessage());
+                }
+            } else {
+                System.out.println("Невідома команда! Введіть 'help' для списку.");
+            }
+        }
+
+    }
+
+
+
+}
