@@ -33,9 +33,7 @@ public class ConsoleMenu {
         System.out.println("Ласкаво просимо до консольної системи внесків!!!");
         System.out.println("Введіть команду help щоб побачити список усіх команд: ");
 
-        boolean isRunning = true;
-
-        while (isRunning) {
+        while (true) {
 
             System.out.print(">>> ");
 
@@ -54,6 +52,8 @@ public class ConsoleMenu {
                 } catch (Exception e) {
                     System.out.println("Помилка при виконанні команди: " + e.getMessage());
                 }
+            } else if (commandArgs[0] == "exit") {
+                System.exit(0);
             } else {
                 System.out.println("Невідома команда! Введіть 'help' для списку.");
             }
