@@ -9,16 +9,16 @@ import java.util.*;
 public class ConsoleMenu {
 
     private Map<String, Command> commands = new HashMap<>();
-    private BankManager bankManger;
+    private BankManager bankManager;
     private FileManager fileManager;
     private Scanner scanner;
 
     public ConsoleMenu() {
         this.fileManager = new FileManager();
-        this.bankManger = new BankManager();
+        this.bankManager = new BankManager();
         this.scanner = new Scanner(System.in);
 
-        commands.put("add", new AddDepositCommand());
+        commands.put("add", new AddDepositCommand(bankManager));
         commands.put("del", new DeleteDepositCommand());
         commands.put("load", new LoadDepositCommand());
         commands.put("save", new SaveToFileCommand());

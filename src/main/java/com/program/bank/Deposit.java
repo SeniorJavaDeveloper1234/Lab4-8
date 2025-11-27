@@ -1,5 +1,10 @@
 package com.program.bank;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class Deposit {
     private String ownerName;
     private double amount;
@@ -7,12 +12,6 @@ public class Deposit {
     private int durationMonths;
     private Bank bank;
 
-    public Deposit(String ownerName, double amount, double interestRate, int durationMonths, Bank bank) {
-        this.ownerName = ownerName;
-        this.amount = amount;
-        this.interestRate = interestRate;
-        this.durationMonths = durationMonths;
-        this.bank = bank;
-    }
+    public Deposit(){}
 
 }
