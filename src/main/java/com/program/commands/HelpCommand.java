@@ -19,10 +19,15 @@ public class HelpCommand implements Command{
     @Override
     public void execute(String param) {
 
+        System.out.println("Банк не вказаний");
+
         System.out.println("====Список всіх команд====");
         for(Map.Entry<String,Command> e : allCommands.entrySet()){
             System.out.println(e.getKey() + " - " + e.getValue().getDesc());
         }
         System.out.println();
+
+
+
     }
 }

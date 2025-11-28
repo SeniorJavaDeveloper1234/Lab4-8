@@ -19,7 +19,8 @@ public class ConsoleMenu {
         this.scanner = new Scanner(System.in);
 
         commands.put("add", new AddDepositCommand(bankManager));
-        commands.put("del", new DeleteDepositCommand());
+        commands.put("showb", new ShowBankCommand(bankManager));
+        commands.put("del", new DeleteDepositCommand(bankManager));
         commands.put("search", new SearchDepositCommand());
         commands.put("sort", new SortDepositCommand());
         commands.put("view", new ViewListDepositCommand());

@@ -24,7 +24,7 @@ public class BankManager {
         banks.add(bank);
     }
 
-    public void loadBanks() {
+    private void loadBanks() {
         banks.clear();
 
         File folder = new File(BANKS_FILE_PATH);
@@ -44,7 +44,7 @@ public class BankManager {
         }
     }
 
-    public void saveBanks() {
+    public void saveAllBank() {
 
         File folder = new File(BANKS_FILE_PATH);
         if (!folder.exists())
@@ -55,4 +55,16 @@ public class BankManager {
             FileManager.saveAsJson(filePath, bank);
         }
     }
+
+    public void saveBank(Bank bank) {
+
+        File folder = new File(BANKS_FILE_PATH);
+        if (!folder.exists())
+            folder.mkdirs();
+
+        String filePath = BANKS_FILE_PATH + bank.getName() + ".json";
+        FileManager.saveAsJson(filePath, bank);
+    }
+
+
 }

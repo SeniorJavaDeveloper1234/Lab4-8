@@ -10,8 +10,7 @@ public class Deposit {
     private double amount;
     private double interestRate;
     private int durationMonths;
-    private Bank bank;
-
+    private String bankname;
 
     public Deposit(){}
 
