@@ -1,1 +1,1 @@
-{"deposits":[],"name":"monobank","depositVariants":[5.0,10.0,15.0]}
+{"deposits":[{"ownerName":"fddsafwdf","amount":1000.0,"interestRate":10.0,"durationMonths":4,"bankName":"monobank","depositId":259025},{"ownerName":"gaadfdfs","amount":2000.0,"interestRate":15.0,"durationMonths":4,"bankName":"monobank","depositId":831053},{"ownerName":"adsfasd","amount":1500.0,"interestRate":5.0,"durationMonths":5,"bankName":"monobank","depositId":548680}],"name":"monobank","depositVariants":[5.0,10.0,15.0]}

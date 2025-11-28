@@ -22,8 +22,8 @@ public class ConsoleMenu {
         commands.put("add", new AddDepositCommand(bankManager, depositManager));
         commands.put("show", new ShowBankCommand(bankManager));
         commands.put("del", new DeleteDepositCommand(bankManager, depositManager));
-        commands.put("search", new SearchDepositCommand());
-        commands.put("sort", new SortDepositCommand());
+        commands.put("search", new SearchDepositCommand(depositManager));
+        commands.put("sort", new SortDepositCommand(depositManager));
         commands.put("view", new ViewListDepositCommand(depositManager));
         commands.put("help", new HelpCommand(commands));
 

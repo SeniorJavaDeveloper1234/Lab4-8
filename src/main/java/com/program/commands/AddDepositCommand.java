@@ -75,6 +75,7 @@ public class AddDepositCommand implements Command {
         bank.addDeposit(deposit);
 
         bankmanager.saveBank(bank);
+        depositmanager.loadDeposits();
 
         System.out.println("Депозит успішно додано!");
     }

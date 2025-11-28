@@ -20,7 +20,7 @@ public class ViewListDepositCommand implements Command{
 
     @Override
     public void execute(String param) {
-        depositmanager.loadDeposits();
+
         for(Deposit deposit : depositmanager.getDeposits()){
             System.out.println(deposit.toString());
         }
