@@ -9,19 +9,17 @@ import java.util.*;
 public class ConsoleMenu {
 
     private Map<String, Command> commands = new HashMap<>();
-    private BankManager bankManager;
-    private FileManager fileManager;
+    private final BankManager bankManager;
+    private final FileManager fileManager;
     private Scanner scanner;
 
-    public ConsoleMenu() {
-        this.fileManager = new FileManager();
-        this.bankManager = new BankManager();
+    public ConsoleMenu(FileManager fileManager, BankManager bankManager) {
+        this.fileManager = fileManager;
+        this.bankManager =  bankManager;
         this.scanner = new Scanner(System.in);
 
         commands.put("add", new AddDepositCommand(bankManager));
         commands.put("del", new DeleteDepositCommand());
-        commands.put("load", new LoadDepositCommand());
-        commands.put("save", new SaveToFileCommand());
         commands.put("search", new SearchDepositCommand());
         commands.put("sort", new SortDepositCommand());
         commands.put("view", new ViewListDepositCommand());
@@ -52,7 +50,7 @@ public class ConsoleMenu {
                 } catch (Exception e) {
                     System.out.println("Помилка при виконанні команди: " + e.getMessage());
                 }
-            } else if (commandArgs[0] == "exit") {
+            } else if (Objects.equals(commandName, "exit")) {
                 System.exit(0);
             } else {
                 System.out.println("Невідома команда! Введіть 'help' для списку.");

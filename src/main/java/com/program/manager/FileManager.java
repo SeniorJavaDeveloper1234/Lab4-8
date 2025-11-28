@@ -8,7 +8,7 @@ public class FileManager {
 
     private static final ObjectMapper mapper = new ObjectMapper();
 
-    public void saveAsJson(String path, Object obj) {
+    public static void saveAsJson(String path, Object obj) {
         try {
             mapper.writeValue(new File(path), obj);
         } catch (IOException e) {

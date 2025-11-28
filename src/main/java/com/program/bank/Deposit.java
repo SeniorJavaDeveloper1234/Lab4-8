@@ -12,6 +12,7 @@ public class Deposit {
     private int durationMonths;
     private Bank bank;
 
+
     public Deposit(){}
 
 }
