@@ -10,8 +10,13 @@ public class Deposit {
     private double amount;
     private double interestRate;
     private int durationMonths;
-    private String bankname;
+    private String bankName;
+    private int depositId;
 
     public Deposit(){}
 
+    @Override
+    public String toString(){
+        return " Унікальний ітендифікатор: "  + depositId  + "; Назва банку: " + bankName + "; Сума вкладу: " + amount + "; Місячна ставка: " + durationMonths + "; Ім'я вкладника: " + ownerName ;
+    }
 }

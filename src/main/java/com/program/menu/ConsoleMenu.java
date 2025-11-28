@@ -2,6 +2,7 @@ package com.program.menu;
 
 import com.program.commands.*;
 import com.program.manager.BankManager;
+import com.program.manager.DepositManager;
 import com.program.manager.FileManager;
 
 import java.util.*;
@@ -10,20 +11,20 @@ public class ConsoleMenu {
 
     private Map<String, Command> commands = new HashMap<>();
     private final BankManager bankManager;
-    private final FileManager fileManager;
+    private final DepositManager depositManager;
     private Scanner scanner;
 
-    public ConsoleMenu(FileManager fileManager, BankManager bankManager) {
-        this.fileManager = fileManager;
+    public ConsoleMenu(BankManager bankManager, DepositManager depositManager) {
+        this.depositManager = depositManager;
         this.bankManager =  bankManager;
         this.scanner = new Scanner(System.in);
 
-        commands.put("add", new AddDepositCommand(bankManager));
-        commands.put("showb", new ShowBankCommand(bankManager));
-        commands.put("del", new DeleteDepositCommand(bankManager));
+        commands.put("add", new AddDepositCommand(bankManager, depositManager));
+        commands.put("show", new ShowBankCommand(bankManager));
+        commands.put("del", new DeleteDepositCommand(bankManager, depositManager));
         commands.put("search", new SearchDepositCommand());
         commands.put("sort", new SortDepositCommand());
-        commands.put("view", new ViewListDepositCommand());
+        commands.put("view", new ViewListDepositCommand(depositManager));
         commands.put("help", new HelpCommand(commands));
 
     }
@@ -52,7 +53,8 @@ public class ConsoleMenu {
                     System.out.println("Помилка при виконанні команди: " + e.getMessage());
                 }
             } else if (Objects.equals(commandName, "exit")) {
-                System.exit(0);
+                //System.exit(0);
+                break;
             } else {
                 System.out.println("Невідома команда! Введіть 'help' для списку.");
             }
