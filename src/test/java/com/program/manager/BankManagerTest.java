@@ -22,9 +22,6 @@ class BankManagerTest {
         bankManager = new BankManager(fileManager, true); // skipLoad=true
     }
 
-    // -----------------------------
-    // addBank()
-    // -----------------------------
     @Test
     void testAddBank() {
         Bank bank = new Bank();
@@ -36,9 +33,6 @@ class BankManagerTest {
         assertEquals("TestBank", bankManager.getBanks().get(0).getName());
     }
 
-    // -----------------------------
-    // loadBanks() - no folder
-    // -----------------------------
     @Test
     void testLoadBanks_NoFolder() {
         File folder = mock(File.class);
@@ -53,9 +47,6 @@ class BankManagerTest {
         assertTrue(bankManager.getBanks().isEmpty());
     }
 
-    // -----------------------------
-    // loadBanks() - empty folder
-    // -----------------------------
     @Test
     void testLoadBanks_EmptyFolder() {
         File folder = mock(File.class);
@@ -74,14 +65,7 @@ class BankManagerTest {
         assertTrue(bankManager.getBanks().isEmpty());
     }
 
-    // -----------------------------
-    // loadBanks() - valid file
-    // -----------------------------
 
-
-    // -----------------------------
-    // loadBanks() - file returns null (broken json)
-    // -----------------------------
     @Test
     void testLoadBanks_FileReturnsNull() {
         File folder = mock(File.class);
@@ -106,9 +90,6 @@ class BankManagerTest {
         assertTrue(bankManager.getBanks().isEmpty());
     }
 
-    // -----------------------------
-    // saveBank()
-    // -----------------------------
     @Test
     void testSaveBank() {
         Bank bank = new Bank();
@@ -124,9 +105,6 @@ class BankManagerTest {
         assertTrue(path.contains("Mono.json"));
     }
 
-    // -----------------------------
-    // saveAllBank()
-    // -----------------------------
     @Test
     void testSaveAllBanks() {
         Bank b1 = new Bank();
@@ -142,10 +120,6 @@ class BankManagerTest {
 
         verify(fileManager, times(2)).saveAsJson(anyString(), any(Bank.class));
     }
-
-    // -----------------------------
-    // constructor — should call loadBanks() when skipLoad=false
-    // -----------------------------
 
     @Test
     void testConstructorSkipLoad() {

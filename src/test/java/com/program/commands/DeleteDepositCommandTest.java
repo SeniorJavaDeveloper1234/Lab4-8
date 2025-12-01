@@ -36,9 +36,7 @@ class DeleteDepositCommandTest {
         System.setOut(System.out);
     }
 
-    // -------------------------
-    // TEST 1 — No bank name
-    // -------------------------
+
     @Test
     void testExecute_NoBankProvided() {
         command.execute("");
@@ -47,9 +45,7 @@ class DeleteDepositCommandTest {
         assertTrue(printed.contains("Банк не вибрано"));
     }
 
-    // -------------------------
-    // TEST 2 — Bank not found
-    // -------------------------
+
     @Test
     void testExecute_BankNotFound() {
         when(bankManager.getBanks()).thenReturn(List.of());
@@ -59,9 +55,7 @@ class DeleteDepositCommandTest {
         assertTrue(output.toString().contains("не знайдено"));
     }
 
-    // ------------------------------
-    // TEST 3 — Bank exists but empty
-    // ------------------------------
+
     @Test
     void testExecute_NoDepositsInBank() {
         Bank bank = mock(Bank.class);
@@ -75,9 +69,7 @@ class DeleteDepositCommandTest {
         assertTrue(output.toString().contains("немає депозитів"));
     }
 
-    // -------------------------------------------------
-    // TEST 4 — Invalid index (out of range)
-    // -------------------------------------------------
+
     @Test
     void testExecute_InvalidDepositIndex() {
         Deposit dep = mock(Deposit.class);
@@ -96,9 +88,7 @@ class DeleteDepositCommandTest {
         assertTrue(output.toString().contains("Невірний номер депозиту"));
     }
 
-    // -------------------------------------------------
-    // TEST 5 — Successful deletion
-    // -------------------------------------------------
+
     @Test
     void testExecute_SuccessfulDeletion() {
         Deposit dep = mock(Deposit.class);
@@ -113,15 +103,13 @@ class DeleteDepositCommandTest {
 
         when(bankManager.getBanks()).thenReturn(List.of(bank));
 
-        // user selects deposit index 1
+
         System.setIn(new ByteArrayInputStream("1\n".getBytes()));
 
         command.execute("Mono");
 
-        // deposit must be removed
         assertEquals(0, depositList.size());
 
-        // verify deletion logic
         verify(depositManager).deleteDeposit(dep);
         verify(bankManager).saveBank(bank);
         verify(depositManager).loadDeposits();

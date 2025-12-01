@@ -33,28 +33,24 @@ class ShowBankCommandTest {
 
     @Test
     void testExecute_DisplaysAllBanksAndVariants() {
-        // mock bank 1
+
         Bank bank1 = mock(Bank.class);
         when(bank1.getName()).thenReturn("Mono");
         when(bank1.getDepositVariants()).thenReturn(new double[]{5.0, 7.5});
 
-        // mock bank 2
         Bank bank2 = mock(Bank.class);
         when(bank2.getName()).thenReturn("Privat");
         when(bank2.getDepositVariants()).thenReturn(new double[]{4.2});
 
         when(bankManager.getBanks()).thenReturn(List.of(bank1, bank2));
 
-        // run command
         command.execute("");
 
         String out = output.toString();
 
-        // assert names
         assertTrue(out.contains("Mono"));
         assertTrue(out.contains("Privat"));
 
-        // assert deposit variants
         assertTrue(out.contains("5.0"));
         assertTrue(out.contains("7.5"));
         assertTrue(out.contains("4.2"));

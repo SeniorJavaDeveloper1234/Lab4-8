@@ -39,12 +39,11 @@ class HelpCommandTest {
 
         HelpCommand help = new HelpCommand(commands);
 
-        // run
         help.execute("");
 
         String printed = output.toString();
 
-        // checks
+
         assertTrue(printed.contains("Банк не вказаний"));
         assertTrue(printed.contains("====Список всіх команд===="));
 

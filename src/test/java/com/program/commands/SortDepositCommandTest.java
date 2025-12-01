@@ -30,7 +30,7 @@ class SortDepositCommandTest {
         System.setOut(System.out);
     }
 
-    // ---------- TEST 1: empty parameter ----------
+
     @Test
     void testExecute_EmptyParam() {
         command.execute("");
@@ -41,7 +41,6 @@ class SortDepositCommandTest {
         verify(depositManager, never()).sort(any());
     }
 
-    // ---------- TEST 2: valid parameter ----------
     @Test
     void testExecute_ValidParam() {
         command.execute("amount");

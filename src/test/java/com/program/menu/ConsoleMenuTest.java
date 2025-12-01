@@ -35,16 +35,12 @@ class ConsoleMenuTest {
         System.setOut(System.out);
     }
 
-    // ----------------------- TEST 1 ---------------------------
     @Test
     void testRun_HelpCommandAndExit() throws Exception {
-        // Симулюємо три введення:
-        // help
-        // exit
+
         String fakeInput = "help\nexit\n";
         Scanner fakeScanner = new Scanner(fakeInput);
 
-        // Підмінюємо scanner у ConsoleMenu через reflection
         Field scannerField = ConsoleMenu.class.getDeclaredField("scanner");
         scannerField.setAccessible(true);
         scannerField.set(menu, fakeScanner);
@@ -54,10 +50,10 @@ class ConsoleMenuTest {
         String printed = output.toString();
 
         assertTrue(printed.contains("Ласкаво просимо"));
-        assertTrue(printed.contains("help -")); // друк команд з HelpCommand
+        assertTrue(printed.contains("help -"));
     }
 
-    // ----------------------- TEST 2 ---------------------------
+
     @Test
     void testRun_UnknownCommand() throws Exception {
         String fakeInput = "abc\nexit\n";

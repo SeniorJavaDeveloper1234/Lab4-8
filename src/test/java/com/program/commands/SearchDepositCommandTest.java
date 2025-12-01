@@ -44,7 +44,7 @@ class SearchDepositCommandTest {
         System.setOut(System.out);
     }
 
-    // ========== BASIC ERRORS ==========
+
 
     @Test
     void testEmptyParam() {
@@ -67,7 +67,6 @@ class SearchDepositCommandTest {
         assertTrue(output.toString().contains("Невідомий параметр пошуку"));
     }
 
-    // ========== SEARCH BY ID ==========
 
     @Test
     void testSearchByIdFound() {
@@ -90,7 +89,7 @@ class SearchDepositCommandTest {
         assertTrue(output.toString().contains("Нічого не знайдено"));
     }
 
-    // ========== SEARCH BY OWNER ==========
+
 
     @Test
     void testSearchByOwnerFound() {
@@ -106,8 +105,6 @@ class SearchDepositCommandTest {
         assertTrue(output.toString().contains("Нічого не знайдено"));
     }
 
-    // ========== SEARCH BY BANK ==========
-
     @Test
     void testSearchByBankFound() {
         command.execute("bank Mono");
@@ -121,8 +118,6 @@ class SearchDepositCommandTest {
 
         assertTrue(output.toString().contains("Нічого не знайдено"));
     }
-
-    // ========== SEARCH BY DURATION ==========
 
     @Test
     void testSearchByDurationFound() {
@@ -145,8 +140,6 @@ class SearchDepositCommandTest {
         assertTrue(output.toString().contains("Нічого не знайдено"));
     }
 
-    // ========== SEARCH BY RATE ==========
-
     @Test
     void testSearchByRateFound() {
         command.execute("rate 7.5");
@@ -168,7 +161,6 @@ class SearchDepositCommandTest {
         assertTrue(output.toString().contains("Нічого не знайдено"));
     }
 
-    // ========== SEARCH BY AMOUNT ==========
 
     @Test
     void testSearchByAmountFound() {

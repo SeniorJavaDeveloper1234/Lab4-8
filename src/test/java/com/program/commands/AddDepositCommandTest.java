@@ -58,20 +58,15 @@ class AddDepositCommandTest {
 
     @Test
     void testExecute_AddDepositSuccessfully() {
-        // Fake bank
+
         Bank bank = mock(Bank.class);
         when(bank.getName()).thenReturn("mono");
         when(bank.getDepositVariants()).thenReturn(new double[]{5.0, 7.5});
         when(bankManager.getBanks()).thenReturn(List.of(bank));
 
-        // Fake ID
         when(depositManager.generateId()).thenReturn(123456);
 
-        // Fake user input sequence:
-        // name: "Vova"
-        // amount: 1000
-        // choose rate: 1
-        // duration: 12
+
         String input = """
                 Vova
                 1000
@@ -80,10 +75,10 @@ class AddDepositCommandTest {
                 """;
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
-        // WHEN
+
         command.execute("mono");
 
-        // THEN — verify deposit created and added
+
         ArgumentCaptor<Deposit> captor = ArgumentCaptor.forClass(Deposit.class);
         verify(bank).addDeposit(captor.capture());
 
@@ -109,7 +104,6 @@ class AddDepositCommandTest {
         when(bank.getDepositVariants()).thenReturn(new double[]{3.0});
         when(bankManager.getBanks()).thenReturn(List.of(bank));
 
-        // wrong index "5"
         String input = """
                 Name
                 1000

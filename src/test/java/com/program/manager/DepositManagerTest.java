@@ -21,9 +21,6 @@ class DepositManagerTest {
         depositManager = new DepositManager(bankManager);
     }
 
-    // -----------------------------------------
-    // loadDeposits()
-    // -----------------------------------------
     @Test
     void testLoadDeposits() {
         Bank b1 = mock(Bank.class);
@@ -42,9 +39,6 @@ class DepositManagerTest {
         assertEquals(3, depositManager.getDeposits().size());
     }
 
-    // -----------------------------------------
-    // addDeposit()
-    // -----------------------------------------
     @Test
     void testAddDeposit() {
         Deposit dep = new Deposit();
@@ -54,9 +48,6 @@ class DepositManagerTest {
         assertTrue(depositManager.getDeposits().contains(dep));
     }
 
-    // -----------------------------------------
-    // deleteDeposit()
-    // -----------------------------------------
     @Test
     void testDeleteDeposit() {
         Deposit dep = new Deposit();
@@ -67,9 +58,7 @@ class DepositManagerTest {
         assertEquals(0, depositManager.getDeposits().size());
     }
 
-    // -----------------------------------------
-    // sort() by id
-    // -----------------------------------------
+
     @Test
     void testSortById() {
         Deposit d1 = new Deposit(); d1.setDepositId(300);
@@ -85,9 +74,6 @@ class DepositManagerTest {
         assertEquals(100, depositManager.getDeposits().get(0).getDepositId());
     }
 
-    // -----------------------------------------
-    // sort() by amount
-    // -----------------------------------------
     @Test
     void testSortByAmount() {
         Deposit d1 = new Deposit(); d1.setAmount(500);
@@ -103,18 +89,13 @@ class DepositManagerTest {
         assertEquals(100, depositManager.getDeposits().get(0).getAmount());
     }
 
-    // -----------------------------------------
-    // sort() unknown parameter
-    // -----------------------------------------
     @Test
     void testSortUnknown() {
-        depositManager.sort("something"); // should not throw errors
-        assertTrue(true); // just verify no exception thrown
+        depositManager.sort("something");
+        assertTrue(true);
     }
 
-    // -----------------------------------------
-    // generateId()
-    // -----------------------------------------
+
     @Test
     void testGenerateIdUnique() {
         Deposit d1 = new Deposit(); d1.setDepositId(123456);
@@ -125,10 +106,9 @@ class DepositManagerTest {
 
         int id = depositManager.generateId();
 
-        // ID must be 6 digits
+
         assertTrue(id >= 100000 && id <= 999999);
 
-        // ID must NOT match existing
         assertNotEquals(123456, id);
         assertNotEquals(999999, id);
     }
