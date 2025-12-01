@@ -6,9 +6,21 @@ import java.io.IOException;
 
 public class FileManager {
 
-    private static final ObjectMapper mapper = new ObjectMapper();
 
-    public static void saveAsJson(String path, Object obj) {
+
+
+
+    private  final ObjectMapper mapper;
+
+    public FileManager(){
+        this.mapper = new ObjectMapper();
+    }
+
+    public FileManager(ObjectMapper mapper) {
+        this.mapper = mapper;
+    }
+
+    public void saveAsJson(String path, Object obj) {
         try {
             mapper.writeValue(new File(path), obj);
         } catch (IOException e) {
@@ -16,7 +28,7 @@ public class FileManager {
         }
     }
 
-    public static <T> T loadFromJson(String path, Class<T> clazz) {
+    public <T> T loadFromJson(String path, Class<T> clazz) {
         try {
             return mapper.readValue(new File(path), clazz);
         } catch (IOException e) {

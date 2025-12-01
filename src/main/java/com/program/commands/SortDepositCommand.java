@@ -13,7 +13,7 @@ public class SortDepositCommand implements Command{
 
     @Override
     public String getDesc() {
-        return "Сортує депозити всіх банків за параметрами (id, owner, duration, rate, bank)";
+        return "Сортує депозити всіх банків за параметрами (id, owner, duration, rate, bank, amount)";
     }
 
     @Override

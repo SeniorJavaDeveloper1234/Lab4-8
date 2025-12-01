@@ -20,11 +20,22 @@ public class BankManager {
         loadBanks();
     }
 
+    public BankManager(FileManager fileManager, boolean skipLoad) {
+        this.fileManager = fileManager;
+        if (!skipLoad) {
+            loadBanks();
+        }
+    }
+
+    protected File getFolder() {
+        return new File(BANKS_FILE_PATH);
+    }
+
     public void addBank(Bank bank) {
         banks.add(bank);
     }
 
-    private void loadBanks() {
+    public void loadBanks() {
         banks.clear();
 
         File folder = new File(BANKS_FILE_PATH);
@@ -37,7 +48,7 @@ public class BankManager {
         if (files == null) return;
 
         for (File file : files) {
-            Bank bank = FileManager.loadFromJson(file.getAbsolutePath(), Bank.class);
+            Bank bank = fileManager.loadFromJson(file.getAbsolutePath(), Bank.class);
             if (bank != null) {
                 banks.add(bank);
             }
@@ -52,7 +63,7 @@ public class BankManager {
 
         for (Bank bank : banks) {
             String filePath = BANKS_FILE_PATH + bank.getName() + ".json";
-            FileManager.saveAsJson(filePath, bank);
+            fileManager.saveAsJson(filePath, bank);
         }
     }
 
@@ -63,7 +74,7 @@ public class BankManager {
             folder.mkdirs();
 
         String filePath = BANKS_FILE_PATH + bank.getName() + ".json";
-        FileManager.saveAsJson(filePath, bank);
+        fileManager.saveAsJson(filePath, bank);
     }
 
 
