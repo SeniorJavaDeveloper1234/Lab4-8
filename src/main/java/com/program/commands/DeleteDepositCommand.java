@@ -65,6 +65,7 @@ public class DeleteDepositCommand implements Command{
         Deposit deposit = bank.getDeposits().get(depositIdx);
         bank.getDeposits().remove(deposit);
         depositmanager.deleteDeposit(deposit);
+        bank.deleteDeposit(deposit);
 
         bankmanager.saveBank(bank);
         depositmanager.loadDeposits();
