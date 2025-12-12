@@ -4,10 +4,14 @@ import com.program.bank.Bank;
 import com.program.bank.Deposit;
 import com.program.manager.BankManager;
 import com.program.manager.DepositManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Scanner;
 
 public class AddDepositCommand implements Command {
+
+    private static final Logger logger = LogManager.getLogger(AddDepositCommand.class);
 
     private final BankManager bankmanager;
     private final DepositManager depositmanager;
@@ -25,7 +29,10 @@ public class AddDepositCommand implements Command {
     @Override
     public void execute(String param) {
 
+        logger.info("Виконання команди AddDeposit з параметром: {}", param);
+
         if (param.isEmpty()) {
+            logger.warn("Команда AddDeposit викликана без назви банку");
             System.out.println("Банк не вибрано");
             return;
         }
@@ -39,6 +46,7 @@ public class AddDepositCommand implements Command {
         }
 
         if (bank == null) {
+            logger.warn("Банк {} не знайдено", param);
             System.out.println("Банк \"" + param + "\" не знайдено!");
             return;
         }
@@ -60,6 +68,7 @@ public class AddDepositCommand implements Command {
         int interestIdx = sc.nextInt() - 1;
 
         if (interestIdx < 0 || interestIdx >= bank.getDepositVariants().length) {
+            logger.warn("Неправильний вибір ставки депозиту для банку {}", bank.getName());
             System.out.println("Неправильний вибір ставки.");
             return;
         }
@@ -76,6 +85,11 @@ public class AddDepositCommand implements Command {
 
         bankmanager.saveBank(bank);
         depositmanager.loadDeposits();
+
+        logger.info(
+                "Депозит успішно додано: id={}, owner={}, bank={}, amount={}, rate={}, duration={}",
+                id, ownerName, bank.getName(), amount, interest, durationMonths
+        );
 
         System.out.println("Депозит успішно додано!");
     }

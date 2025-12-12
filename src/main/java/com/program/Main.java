@@ -18,7 +18,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args){
-        logger.info("Log4j2 працює!");
+
         FileManager fileManager = new FileManager();
         BankManager bankManager = new BankManager(fileManager);
         DepositManager depositManager = new DepositManager(bankManager);

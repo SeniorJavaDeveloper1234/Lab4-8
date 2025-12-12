@@ -7,18 +7,17 @@
             <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] %-5level %logger{36} - %msg%n"/>
         </File>
 
-
         <SMTP name="EmailLogger"
-              to="volodymyr.varhas.oi.2024@lpnu.ua"
-              from="volodymyr.varhas.oi.2024@lpnu.ua"
+              to="mtt202301@gmail.com"
+              from="mtt202301@gmail.com"
               subject="CRITICAL ERROR in Deposit System"
               smtpHost="smtp.gmail.com"
-              smtpPort="587"
-              smtpUsername="volodymyr.varhas.oi.2024@lpnu.ua"
-              smtpPassword="ТВІЙ_APP_PASSWORD"
-              smtpProtocol="smtp"
+              smtpPort="465"
+              smtpUsername="mtt202301@gmail.com"
+              smtpPassword="hjgpbnqgiqzamssi"
+              smtpProtocol="smtps"
               bufferSize="512"
-              ignoreExceptions="false">
+              ignoreExceptions="true">
 
             <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] %-5level %logger{36} - %msg%n%throwable"/>
 
@@ -26,12 +25,10 @@
 
     </Appenders>
 
-
     <Loggers>
 
         <Root level="info">
             <AppenderRef ref="FileLogger"/>
-
             <AppenderRef ref="EmailLogger" level="error"/>
         </Root>
 

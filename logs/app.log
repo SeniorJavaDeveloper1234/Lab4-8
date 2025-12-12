@@ -1,0 +1,22 @@
+[2025-12-12 18:17:20] INFO  com.program.Main - Log4j2 працює!
+[2025-12-12 18:17:20] ERROR com.program.Main - SMTP TEST ERROR
+java.lang.RuntimeException: Email test
+	at com.program.Main.main(Main.java:22) [classes/:?]
+[2025-12-12 18:19:54] INFO  com.program.Main - Log4j2 працює!
+[2025-12-12 18:19:54] ERROR com.program.Main - SMTP TEST ERROR
+java.lang.RuntimeException: Email test
+	at com.program.Main.main(Main.java:22) [classes/:?]
+[2025-12-12 18:21:52] INFO  com.program.Main - Log4j2 працює!
+[2025-12-12 18:21:52] ERROR com.program.Main - SMTP TEST ERROR
+java.lang.RuntimeException: Email test
+	at com.program.Main.main(Main.java:22) [classes/:?]
+[2025-12-12 18:26:02] INFO  com.program.Main - Log4j2 працює!
+[2025-12-12 18:26:02] ERROR com.program.Main - SMTP TEST ERROR
+java.lang.RuntimeException: Email test
+	at com.program.Main.main(Main.java:22) [classes/:?]
+[2025-12-12 18:26:09] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-12 18:26:09] INFO  com.program.manager.BankManager - Завантаження банків з ./src/main/resources/bank/
+[2025-12-12 18:26:09] INFO  com.program.manager.BankManager - Завантажено банк: monobank
+[2025-12-12 18:26:09] INFO  com.program.manager.BankManager - Завантажено банк: oschadbank
+[2025-12-12 18:26:09] INFO  com.program.manager.BankManager - Завантажено банк: privatbank
+[2025-12-12 18:26:09] INFO  com.program.manager.BankManager - Завантажено банків: 3

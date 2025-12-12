@@ -48,7 +48,7 @@ public class BankManager {
         }
 
         for (File file : files) {
-            Bank bank = FileManager.loadFromJson(file.getAbsolutePath(), Bank.class);
+            Bank bank = fileManager.loadFromJson(file.getAbsolutePath(), Bank.class);
             if (bank != null) {
                 banks.add(bank);
                 logger.info("Завантажено банк: {}", bank.getName());
@@ -69,7 +69,7 @@ public class BankManager {
 
         for (Bank bank : banks) {
             String filePath = BANKS_FILE_PATH + bank.getName() + ".json";
-            FileManager.saveAsJson(filePath, bank);
+            fileManager.saveAsJson(filePath, bank);
             logger.info("Файл банку {} збережено у {}", bank.getName(), filePath);
         }
     }
@@ -82,7 +82,7 @@ public class BankManager {
             folder.mkdirs();
 
         String filePath = BANKS_FILE_PATH + bank.getName() + ".json";
-        FileManager.saveAsJson(filePath, bank);
+        fileManager.saveAsJson(filePath, bank);
         logger.info("Файл банку {} збережено у {}", bank.getName(), filePath);
     }
 }

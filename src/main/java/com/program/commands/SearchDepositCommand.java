@@ -2,8 +2,12 @@ package com.program.commands;
 
 import com.program.bank.Deposit;
 import com.program.manager.DepositManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class SearchDepositCommand implements Command {
+
+    private static final Logger logger = LogManager.getLogger(SearchDepositCommand.class);
 
     private final DepositManager depositManager;
 
@@ -18,7 +22,11 @@ public class SearchDepositCommand implements Command {
 
     @Override
     public void execute(String param) {
+
+        logger.info("Виконання команди SearchDeposit з параметром: {}", param);
+
         if (param.isEmpty()) {
+            logger.warn("Команда SearchDeposit викликана без параметрів");
             System.out.println("Не введено жодного параметру!");
             return;
         }
@@ -26,6 +34,7 @@ public class SearchDepositCommand implements Command {
         String[] parts = param.split(" ", 2);
 
         if (parts.length < 2) {
+            logger.warn("Невірний формат команди SearchDeposit: {}", param);
             System.out.println("Формат: search <field> <value>");
             return;
         }
@@ -46,6 +55,7 @@ public class SearchDepositCommand implements Command {
                             found = true;
                         }
                     } catch (NumberFormatException e) {
+                        logger.warn("Невірний формат ID для пошуку: {}", value);
                         System.out.println("ID повинен бути числом!");
                         return;
                     }
@@ -73,6 +83,7 @@ public class SearchDepositCommand implements Command {
                             found = true;
                         }
                     } catch (NumberFormatException e) {
+                        logger.warn("Невірний формат duration для пошуку: {}", value);
                         System.out.println("duration має бути числом!");
                         return;
                     }
@@ -86,6 +97,7 @@ public class SearchDepositCommand implements Command {
                             found = true;
                         }
                     } catch (NumberFormatException e) {
+                        logger.warn("Невірний формат rate для пошуку: {}", value);
                         System.out.println("Ставка має бути числом!");
                         return;
                     }
@@ -99,12 +111,14 @@ public class SearchDepositCommand implements Command {
                             found = true;
                         }
                     } catch (NumberFormatException e) {
+                        logger.warn("Невірний формат amount для пошуку: {}", value);
                         System.out.println("Сума має бути числом!");
                         return;
                     }
                 }
 
                 default -> {
+                    logger.warn("Невідомий параметр пошуку: {}", field);
                     System.out.println("Невідомий параметр пошуку!");
                     System.out.println("Можна шукати за: id, owner, duration, rate, amount, bank");
                     return;
@@ -113,7 +127,10 @@ public class SearchDepositCommand implements Command {
         }
 
         if (!found) {
+            logger.info("Пошук не дав результатів: {} {}", field, value);
             System.out.println("Нічого не знайдено!");
+        } else {
+            logger.info("Пошук завершено успішно: {} {}", field, value);
         }
     }
 }
