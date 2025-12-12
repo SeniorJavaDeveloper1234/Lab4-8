@@ -6,16 +6,23 @@ import com.program.manager.BankManager;
 import com.program.manager.DepositManager;
 import com.program.manager.FileManager;
 import com.program.menu.ConsoleMenu;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args){
 
+    private static final Logger logger = LogManager.getLogger(Main.class);
+
+    public static void main(String[] args){
+        logger.info("Log4j2 працює!");
         FileManager fileManager = new FileManager();
         BankManager bankManager = new BankManager(fileManager);
         DepositManager depositManager = new DepositManager(bankManager);
+
 
         ConsoleMenu consoleMenu = new ConsoleMenu(bankManager, depositManager);
         consoleMenu.run();
