@@ -416,3 +416,509 @@ com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'NOT': was exp
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231) [junit-rt.jar:?]
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) [junit-rt.jar:?]
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: duration 12
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Пошук завершено успішно: duration 12
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: id
+[2025-12-15 21:59:47] WARN  com.program.commands.SearchDepositCommand - Невірний формат команди SearchDeposit: id
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: 
+[2025-12-15 21:59:47] WARN  com.program.commands.SearchDepositCommand - Команда SearchDeposit викликана без параметрів
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: bank Mono
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Пошук завершено успішно: bank Mono
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: bank Privat
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Пошук не дав результатів: bank Privat
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: rate qqq
+[2025-12-15 21:59:47] WARN  com.program.commands.SearchDepositCommand - Невірний формат rate для пошуку: qqq
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: id 222
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Пошук не дав результатів: id 222
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: abc 123
+[2025-12-15 21:59:47] WARN  com.program.commands.SearchDepositCommand - Невідомий параметр пошуку: abc
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: amount 999
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Пошук не дав результатів: amount 999
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: rate 7.5
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Пошук завершено успішно: rate 7.5
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: id 111
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Пошук завершено успішно: id 111
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: duration abc
+[2025-12-15 21:59:47] WARN  com.program.commands.SearchDepositCommand - Невірний формат duration для пошуку: abc
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: owner Petro
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Пошук не дав результатів: owner Petro
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: amount 10000
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Пошук завершено успішно: amount 10000
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: amount ab
+[2025-12-15 21:59:47] WARN  com.program.commands.SearchDepositCommand - Невірний формат amount для пошуку: ab
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: rate 10.0
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Пошук не дав результатів: rate 10.0
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: owner Vova
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Пошук завершено успішно: owner Vova
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: id abc
+[2025-12-15 21:59:47] WARN  com.program.commands.SearchDepositCommand - Невірний формат ID для пошуку: abc
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: duration 36
+[2025-12-15 21:59:47] INFO  com.program.commands.SearchDepositCommand - Пошук не дав результатів: duration 36
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Ініціалізовано ConsoleMenu та зареєстровано 7 команд
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Запуск консольного меню
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Введена команда: abc
+[2025-12-15 21:59:47] WARN  com.program.menu.ConsoleMenu - Невідома команда: abc
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Введена команда: exit
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Отримано команду exit. Завершення роботи програми
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Консольне меню завершило роботу
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Ініціалізовано ConsoleMenu та зареєстровано 7 команд
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Запуск консольного меню
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Введена команда: help
+[2025-12-15 21:59:47] INFO  com.program.commands.HelpCommand - Виконання команди Help
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Команда help виконана успішно
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Введена команда: exit
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Отримано команду exit. Завершення роботи програми
+[2025-12-15 21:59:47] INFO  com.program.menu.ConsoleMenu - Консольне меню завершило роботу
+[2025-12-15 21:59:47] INFO  com.program.manager.FileManager - Створено FileManager з переданим ObjectMapper
+[2025-12-15 21:59:47] INFO  com.program.manager.FileManager - Обʼєкт успішно збережено у файл C:\Users\VOLODY~1\AppData\Local\Temp\junit-5791413314859683762\test.json
+[2025-12-15 21:59:47] INFO  com.program.manager.FileManager - Обʼєкт успішно завантажено з файлу C:\Users\VOLODY~1\AppData\Local\Temp\junit-5791413314859683762\test.json
+[2025-12-15 21:59:47] INFO  com.program.manager.FileManager - Створено FileManager з переданим ObjectMapper
+[2025-12-15 21:59:47] ERROR com.program.manager.FileManager - Помилка завантаження обʼєкта з файлу C:\Users\VOLODY~1\AppData\Local\Temp\junit-15293885988922160854\broken.json
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'NOT': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 5]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2567) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2593) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2601) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:765) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3659) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3632) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._matchToken(UTF8StreamJsonParser.java:2956) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2724) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:867) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:753) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4992) ~[jackson-databind-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4898) ~[jackson-databind-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3713) ~[jackson-databind-2.17.1.jar:2.17.1]
+	at com.program.manager.FileManager.loadFromJson(FileManager.java:37) [classes/:?]
+	at com.program.manager.FileManagerTest.testLoadInvalidJsonReturnsNull(FileManagerTest.java:49) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:701) [junit-platform-commons-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:528) [junit-platform-commons-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.support.MethodReflectionUtils.invoke(MethodReflectionUtils.java:45) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:61) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:124) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:163) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:148) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:123) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:105) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:99) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:66) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:47) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:39) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:104) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:98) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invokeVoid(InterceptingExecutableInvoker.java:71) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$0(TestMethodTestDescriptor.java:219) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:215) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:157) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:70) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:176) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:246) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:218) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:179) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:157) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:125) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:93) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:48) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$0(InterceptingLauncher.java:41) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:40) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:48) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:67) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) [junit-rt.jar:?]
+[2025-12-15 21:59:55] INFO  com.program.commands.AddDepositCommand - Виконання команди AddDeposit з параметром: 
+[2025-12-15 21:59:55] WARN  com.program.commands.AddDepositCommand - Команда AddDeposit викликана без назви банку
+[2025-12-15 21:59:55] INFO  com.program.commands.AddDepositCommand - Виконання команди AddDeposit з параметром: mono
+[2025-12-15 21:59:55] INFO  com.program.commands.AddDepositCommand - Депозит успішно додано: id=123456, owner=Vova, bank=mono, amount=1000.0, rate=5.0, duration=12
+[2025-12-15 21:59:55] INFO  com.program.commands.AddDepositCommand - Виконання команди AddDeposit з параметром: mono
+[2025-12-15 21:59:55] WARN  com.program.commands.AddDepositCommand - Неправильний вибір ставки депозиту для банку mono
+[2025-12-15 21:59:55] INFO  com.program.commands.AddDepositCommand - Виконання команди AddDeposit з параметром: mono
+[2025-12-15 21:59:55] WARN  com.program.commands.AddDepositCommand - Банк mono не знайдено
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Додано депозит: id=300, owner=null, bank=null, amount=0.0
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Додано депозит: id=100, owner=null, bank=null, amount=0.0
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Додано депозит: id=200, owner=null, bank=null, amount=0.0
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Сортування депозитів за параметром: id
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Додано депозит: id=0, owner=null, bank=null, amount=0.0
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Додано депозит: id=0, owner=null, bank=null, amount=0.0
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Видалено депозит: id=0, owner=null, bank=null
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантажено депозитів: 3
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Додано депозит: id=123456, owner=null, bank=null, amount=0.0
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Додано депозит: id=999999, owner=null, bank=null, amount=0.0
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Генерація унікального ID для депозиту
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Згенеровано унікальний ID: 808008
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 21:59:55] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 21:59:56] INFO  com.program.manager.DepositManager - Сортування депозитів за параметром: something
+[2025-12-15 21:59:56] WARN  com.program.manager.DepositManager - Невідомий параметр сортування: something
+[2025-12-15 21:59:56] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 21:59:56] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 21:59:56] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 21:59:56] INFO  com.program.manager.DepositManager - Додано депозит: id=0, owner=null, bank=null, amount=500.0
+[2025-12-15 21:59:56] INFO  com.program.manager.DepositManager - Додано депозит: id=0, owner=null, bank=null, amount=100.0
+[2025-12-15 21:59:56] INFO  com.program.manager.DepositManager - Додано депозит: id=0, owner=null, bank=null, amount=300.0
+[2025-12-15 21:59:56] INFO  com.program.manager.DepositManager - Сортування депозитів за параметром: amount
+[2025-12-15 21:59:56] INFO  com.program.commands.ShowBankCommand - Виконання команди ShowBank
+[2025-12-15 21:59:56] INFO  com.program.commands.ShowBankCommand - Виведено список банків: 2
+[2025-12-15 21:59:56] INFO  com.program.commands.DeleteDepositCommand - Виконання команди DeleteDeposit з параметром: Mono
+[2025-12-15 21:59:56] WARN  com.program.commands.DeleteDepositCommand - Невірний індекс депозиту 4 для банку Mono
+[2025-12-15 21:59:56] INFO  com.program.commands.DeleteDepositCommand - Виконання команди DeleteDeposit з параметром: 
+[2025-12-15 21:59:56] WARN  com.program.commands.DeleteDepositCommand - Команда DeleteDeposit викликана без назви банку
+[2025-12-15 21:59:56] INFO  com.program.commands.DeleteDepositCommand - Виконання команди DeleteDeposit з параметром: Mono
+[2025-12-15 21:59:56] INFO  com.program.commands.DeleteDepositCommand - Депозит видалено: id=0, owner=null, bank=null, amount=0.0
+[2025-12-15 21:59:56] INFO  com.program.commands.DeleteDepositCommand - Виконання команди DeleteDeposit з параметром: Mono
+[2025-12-15 21:59:56] INFO  com.program.commands.DeleteDepositCommand - Спроба видалення депозиту з банку Mono, але депозитів немає
+[2025-12-15 21:59:56] INFO  com.program.commands.DeleteDepositCommand - Виконання команди DeleteDeposit з параметром: Mono
+[2025-12-15 21:59:56] WARN  com.program.commands.DeleteDepositCommand - Банк Mono не знайдено
+[2025-12-15 21:59:56] INFO  com.program.commands.HelpCommand - Виконання команди Help
+[2025-12-15 21:59:56] INFO  com.program.commands.SortDepositCommand - Виконання команди SortDeposit з параметром: 
+[2025-12-15 21:59:56] WARN  com.program.commands.SortDepositCommand - Команда SortDeposit викликана без параметра сортування
+[2025-12-15 21:59:56] INFO  com.program.commands.SortDepositCommand - Виконання команди SortDeposit з параметром: amount
+[2025-12-15 21:59:56] INFO  com.program.commands.SortDepositCommand - Сортування депозитів виконано за параметром: amount
+[2025-12-15 21:59:56] INFO  com.program.commands.ViewListDepositCommand - Виконання команди ViewListDeposit
+[2025-12-15 21:59:56] INFO  com.program.commands.ViewListDepositCommand - Відображено депозитів: 2
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Додано новий банк: Privat
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Додано новий банк: Oschad
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Збереження всіх банків...
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Файл банку Privat збережено у ./src/main/resources/bank/Privat.json
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Файл банку Oschad збережено у ./src/main/resources/bank/Oschad.json
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Додано новий банк: TestBank
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Збереження банку Mono
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Файл банку Mono збережено у ./src/main/resources/bank/Mono.json
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 21:59:56] INFO  com.program.manager.BankManager - Завантаження банків з ./src/main/resources/bank/
+[2025-12-15 21:59:56] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу monobank.json
+[2025-12-15 22:00:02] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу oschadbank.json
+[2025-12-15 22:00:09] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу privatbank.json
+[2025-12-15 22:00:18] INFO  com.program.manager.BankManager - Завантажено банків: 0
+[2025-12-15 22:00:18] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:00:18] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:00:18] INFO  com.program.manager.BankManager - Завантаження банків з ./src/main/resources/bank/
+[2025-12-15 22:00:18] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу monobank.json
+[2025-12-15 22:00:25] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу oschadbank.json
+[2025-12-15 22:00:32] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу privatbank.json
+[2025-12-15 22:00:38] INFO  com.program.manager.BankManager - Завантажено банків: 0
+[2025-12-15 22:00:38] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:00:38] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:00:38] INFO  com.program.manager.BankManager - Завантаження банків з ./src/main/resources/bank/
+[2025-12-15 22:00:38] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу monobank.json
+[2025-12-15 22:00:44] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу oschadbank.json
+[2025-12-15 22:00:50] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу privatbank.json
+[2025-12-15 22:00:57] INFO  com.program.manager.BankManager - Завантажено банків: 0
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: duration 12
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Пошук завершено успішно: duration 12
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: id
+[2025-12-15 22:05:49] WARN  com.program.commands.SearchDepositCommand - Невірний формат команди SearchDeposit: id
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: 
+[2025-12-15 22:05:49] WARN  com.program.commands.SearchDepositCommand - Команда SearchDeposit викликана без параметрів
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: bank Mono
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Пошук завершено успішно: bank Mono
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: bank Privat
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Пошук не дав результатів: bank Privat
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: rate qqq
+[2025-12-15 22:05:49] WARN  com.program.commands.SearchDepositCommand - Невірний формат rate для пошуку: qqq
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: id 222
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Пошук не дав результатів: id 222
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: abc 123
+[2025-12-15 22:05:49] WARN  com.program.commands.SearchDepositCommand - Невідомий параметр пошуку: abc
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: amount 999
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Пошук не дав результатів: amount 999
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: rate 7.5
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Пошук завершено успішно: rate 7.5
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: id 111
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Пошук завершено успішно: id 111
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: duration abc
+[2025-12-15 22:05:49] WARN  com.program.commands.SearchDepositCommand - Невірний формат duration для пошуку: abc
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: owner Petro
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Пошук не дав результатів: owner Petro
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: amount 10000
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Пошук завершено успішно: amount 10000
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: amount ab
+[2025-12-15 22:05:49] WARN  com.program.commands.SearchDepositCommand - Невірний формат amount для пошуку: ab
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: rate 10.0
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Пошук не дав результатів: rate 10.0
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: owner Vova
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Пошук завершено успішно: owner Vova
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: id abc
+[2025-12-15 22:05:49] WARN  com.program.commands.SearchDepositCommand - Невірний формат ID для пошуку: abc
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Виконання команди SearchDeposit з параметром: duration 36
+[2025-12-15 22:05:49] INFO  com.program.commands.SearchDepositCommand - Пошук не дав результатів: duration 36
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Ініціалізовано ConsoleMenu та зареєстровано 7 команд
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Запуск консольного меню
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Введена команда: abc
+[2025-12-15 22:05:49] WARN  com.program.menu.ConsoleMenu - Невідома команда: abc
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Введена команда: exit
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Отримано команду exit. Завершення роботи програми
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Консольне меню завершило роботу
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Ініціалізовано ConsoleMenu та зареєстровано 7 команд
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Запуск консольного меню
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Введена команда: help
+[2025-12-15 22:05:49] INFO  com.program.commands.HelpCommand - Виконання команди Help
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Команда help виконана успішно
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Введена команда: exit
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Отримано команду exit. Завершення роботи програми
+[2025-12-15 22:05:49] INFO  com.program.menu.ConsoleMenu - Консольне меню завершило роботу
+[2025-12-15 22:05:50] INFO  com.program.manager.FileManager - Створено FileManager з переданим ObjectMapper
+[2025-12-15 22:05:50] INFO  com.program.manager.FileManager - Обʼєкт успішно збережено у файл C:\Users\VOLODY~1\AppData\Local\Temp\junit-1266475748894131740\test.json
+[2025-12-15 22:05:50] INFO  com.program.manager.FileManager - Обʼєкт успішно завантажено з файлу C:\Users\VOLODY~1\AppData\Local\Temp\junit-1266475748894131740\test.json
+[2025-12-15 22:05:50] INFO  com.program.manager.FileManager - Створено FileManager з переданим ObjectMapper
+[2025-12-15 22:05:50] ERROR com.program.manager.FileManager - Помилка завантаження обʼєкта з файлу C:\Users\VOLODY~1\AppData\Local\Temp\junit-235134730542974365\broken.json
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'NOT': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 5]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2567) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2593) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2601) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:765) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3659) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3632) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._matchToken(UTF8StreamJsonParser.java:2956) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2724) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:867) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:753) ~[jackson-core-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4992) ~[jackson-databind-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4898) ~[jackson-databind-2.17.1.jar:2.17.1]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3713) ~[jackson-databind-2.17.1.jar:2.17.1]
+	at com.program.manager.FileManager.loadFromJson(FileManager.java:37) [classes/:?]
+	at com.program.manager.FileManagerTest.testLoadInvalidJsonReturnsNull(FileManagerTest.java:49) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:701) [junit-platform-commons-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:528) [junit-platform-commons-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.support.MethodReflectionUtils.invoke(MethodReflectionUtils.java:45) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:61) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:124) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:163) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:148) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:123) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:105) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:99) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:66) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:47) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:39) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:104) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:98) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invokeVoid(InterceptingExecutableInvoker.java:71) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$0(TestMethodTestDescriptor.java:219) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:215) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:157) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:70) [junit-jupiter-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:176) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58) [junit-platform-engine-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:246) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:218) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:179) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:157) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:125) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:93) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:48) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$0(InterceptingLauncher.java:41) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:40) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:48) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:67) [junit-platform-launcher-6.1.0-M1.jar:6.1.0-M1]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) [junit-rt.jar:?]
+[2025-12-15 22:05:57] INFO  com.program.commands.AddDepositCommand - Виконання команди AddDeposit з параметром: 
+[2025-12-15 22:05:57] WARN  com.program.commands.AddDepositCommand - Команда AddDeposit викликана без назви банку
+[2025-12-15 22:05:57] INFO  com.program.commands.AddDepositCommand - Виконання команди AddDeposit з параметром: mono
+[2025-12-15 22:05:57] INFO  com.program.commands.AddDepositCommand - Депозит успішно додано: id=123456, owner=Vova, bank=mono, amount=1000.0, rate=5.0, duration=12
+[2025-12-15 22:05:57] INFO  com.program.commands.AddDepositCommand - Виконання команди AddDeposit з параметром: mono
+[2025-12-15 22:05:57] WARN  com.program.commands.AddDepositCommand - Неправильний вибір ставки депозиту для банку mono
+[2025-12-15 22:05:57] INFO  com.program.commands.AddDepositCommand - Виконання команди AddDeposit з параметром: mono
+[2025-12-15 22:05:57] WARN  com.program.commands.AddDepositCommand - Банк mono не знайдено
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Додано депозит: id=300, owner=null, bank=null, amount=0.0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Додано депозит: id=100, owner=null, bank=null, amount=0.0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Додано депозит: id=200, owner=null, bank=null, amount=0.0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Сортування депозитів за параметром: id
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Додано депозит: id=0, owner=null, bank=null, amount=0.0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Додано депозит: id=0, owner=null, bank=null, amount=0.0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Видалено депозит: id=0, owner=null, bank=null
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантажено депозитів: 3
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Додано депозит: id=123456, owner=null, bank=null, amount=0.0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Додано депозит: id=999999, owner=null, bank=null, amount=0.0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Генерація унікального ID для депозиту
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Згенеровано унікальний ID: 518183
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Сортування депозитів за параметром: something
+[2025-12-15 22:05:57] WARN  com.program.manager.DepositManager - Невідомий параметр сортування: something
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Створено DepositManager. Завантаження депозитів...
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантаження депозитів з банків
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Завантажено депозитів: 0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Додано депозит: id=0, owner=null, bank=null, amount=500.0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Додано депозит: id=0, owner=null, bank=null, amount=100.0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Додано депозит: id=0, owner=null, bank=null, amount=300.0
+[2025-12-15 22:05:57] INFO  com.program.manager.DepositManager - Сортування депозитів за параметром: amount
+[2025-12-15 22:05:57] INFO  com.program.commands.ShowBankCommand - Виконання команди ShowBank
+[2025-12-15 22:05:57] INFO  com.program.commands.ShowBankCommand - Виведено список банків: 2
+[2025-12-15 22:05:57] INFO  com.program.commands.DeleteDepositCommand - Виконання команди DeleteDeposit з параметром: Mono
+[2025-12-15 22:05:57] WARN  com.program.commands.DeleteDepositCommand - Невірний індекс депозиту 4 для банку Mono
+[2025-12-15 22:05:57] INFO  com.program.commands.DeleteDepositCommand - Виконання команди DeleteDeposit з параметром: 
+[2025-12-15 22:05:57] WARN  com.program.commands.DeleteDepositCommand - Команда DeleteDeposit викликана без назви банку
+[2025-12-15 22:05:57] INFO  com.program.commands.DeleteDepositCommand - Виконання команди DeleteDeposit з параметром: Mono
+[2025-12-15 22:05:57] INFO  com.program.commands.DeleteDepositCommand - Депозит видалено: id=0, owner=null, bank=null, amount=0.0
+[2025-12-15 22:05:57] INFO  com.program.commands.DeleteDepositCommand - Виконання команди DeleteDeposit з параметром: Mono
+[2025-12-15 22:05:57] INFO  com.program.commands.DeleteDepositCommand - Спроба видалення депозиту з банку Mono, але депозитів немає
+[2025-12-15 22:05:57] INFO  com.program.commands.DeleteDepositCommand - Виконання команди DeleteDeposit з параметром: Mono
+[2025-12-15 22:05:57] WARN  com.program.commands.DeleteDepositCommand - Банк Mono не знайдено
+[2025-12-15 22:05:57] INFO  com.program.commands.HelpCommand - Виконання команди Help
+[2025-12-15 22:05:57] INFO  com.program.commands.SortDepositCommand - Виконання команди SortDeposit з параметром: 
+[2025-12-15 22:05:57] WARN  com.program.commands.SortDepositCommand - Команда SortDeposit викликана без параметра сортування
+[2025-12-15 22:05:57] INFO  com.program.commands.SortDepositCommand - Виконання команди SortDeposit з параметром: amount
+[2025-12-15 22:05:57] INFO  com.program.commands.SortDepositCommand - Сортування депозитів виконано за параметром: amount
+[2025-12-15 22:05:57] INFO  com.program.commands.ViewListDepositCommand - Виконання команди ViewListDeposit
+[2025-12-15 22:05:57] INFO  com.program.commands.ViewListDepositCommand - Відображено депозитів: 2
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Додано новий банк: Privat
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Додано новий банк: Oschad
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Збереження всіх банків...
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Файл банку Privat збережено у ./src/main/resources/bank/Privat.json
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Файл банку Oschad збережено у ./src/main/resources/bank/Oschad.json
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Додано новий банк: TestBank
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Збереження банку Mono
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Файл банку Mono збережено у ./src/main/resources/bank/Mono.json
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:05:57] INFO  com.program.manager.BankManager - Завантаження банків з ./src/main/resources/bank/
+[2025-12-15 22:05:57] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу monobank.json
+[2025-12-15 22:06:04] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу oschadbank.json
+[2025-12-15 22:06:11] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу privatbank.json
+[2025-12-15 22:06:17] INFO  com.program.manager.BankManager - Завантажено банків: 0
+[2025-12-15 22:06:17] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:06:17] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:06:17] INFO  com.program.manager.BankManager - Завантаження банків з ./src/main/resources/bank/
+[2025-12-15 22:06:17] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу monobank.json
+[2025-12-15 22:06:24] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу oschadbank.json
+[2025-12-15 22:06:30] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу privatbank.json
+[2025-12-15 22:06:37] INFO  com.program.manager.BankManager - Завантажено банків: 0
+[2025-12-15 22:06:37] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:06:37] INFO  com.program.manager.BankManager - Створено BankManager. Починаю завантаження банків...
+[2025-12-15 22:06:37] INFO  com.program.manager.BankManager - Завантаження банків з ./src/main/resources/bank/
+[2025-12-15 22:06:37] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу monobank.json
+[2025-12-15 22:06:43] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу oschadbank.json
+[2025-12-15 22:06:50] ERROR com.program.manager.BankManager - Не вдалося завантажити банк із файлу privatbank.json
+[2025-12-15 22:06:56] INFO  com.program.manager.BankManager - Завантажено банків: 0
