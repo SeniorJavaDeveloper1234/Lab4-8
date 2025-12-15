@@ -24,12 +24,21 @@ public class BankManager {
         loadBanks();
     }
 
+    public BankManager(FileManager fileManager, boolean a) {
+        this.fileManager = fileManager;
+        logger.info("Створено BankManager. Починаю завантаження банків...");
+        if(!a){
+            loadBanks();
+        }
+
+    }
+
     public void addBank(Bank bank) {
         banks.add(bank);
         logger.info("Додано новий банк: {}", bank.getName());
     }
 
-    private void loadBanks() {
+    public void loadBanks() {
         logger.info("Завантаження банків з {}", BANKS_FILE_PATH);
 
         banks.clear();
@@ -85,4 +94,9 @@ public class BankManager {
         fileManager.saveAsJson(filePath, bank);
         logger.info("Файл банку {} збережено у {}", bank.getName(), filePath);
     }
+
+    public File getFolder() {
+        return new File(BANKS_FILE_PATH);
+    }
+
 }

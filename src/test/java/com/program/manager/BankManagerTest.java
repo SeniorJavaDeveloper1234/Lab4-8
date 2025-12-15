@@ -7,6 +7,7 @@ import org.mockito.ArgumentCaptor;
 
 import java.io.File;
 import java.io.FilenameFilter;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -19,7 +20,8 @@ class BankManagerTest {
     @BeforeEach
     void setUp() {
         fileManager = mock(FileManager.class);
-        bankManager = new BankManager(fileManager, true); // skipLoad=true
+
+        bankManager = new BankManager(fileManager, true);
     }
 
     @Test
@@ -39,12 +41,12 @@ class BankManagerTest {
 
         when(folder.exists()).thenReturn(false);
 
-        bankManager = spy(new BankManager(fileManager, true));
-        doReturn(folder).when(bankManager).getFolder();
+        BankManager spyManager = spy(new BankManager(fileManager, true));
+        doReturn(folder).when(spyManager).getFolder();
 
-        bankManager.loadBanks();
+        spyManager.loadBanks();
 
-        assertTrue(bankManager.getBanks().isEmpty());
+        assertTrue(spyManager.getBanks().isEmpty());
     }
 
     @Test
@@ -53,18 +55,16 @@ class BankManagerTest {
 
         when(folder.exists()).thenReturn(true);
         when(folder.isDirectory()).thenReturn(true);
-
         when(folder.listFiles(any(FilenameFilter.class)))
                 .thenReturn(new File[]{});
 
-        bankManager = spy(new BankManager(fileManager, true));
-        doReturn(folder).when(bankManager).getFolder();
+        BankManager spyManager = spy(new BankManager(fileManager, true));
+        doReturn(folder).when(spyManager).getFolder();
 
-        bankManager.loadBanks();
+        spyManager.loadBanks();
 
-        assertTrue(bankManager.getBanks().isEmpty());
+        assertTrue(spyManager.getBanks().isEmpty());
     }
-
 
     @Test
     void testLoadBanks_FileReturnsNull() {
@@ -73,38 +73,44 @@ class BankManagerTest {
 
         when(folder.exists()).thenReturn(true);
         when(folder.isDirectory()).thenReturn(true);
-
         when(folder.listFiles(any(FilenameFilter.class)))
                 .thenReturn(new File[]{file});
 
         when(file.getAbsolutePath()).thenReturn("bad.json");
-
         when(fileManager.loadFromJson(anyString(), eq(Bank.class)))
                 .thenReturn(null);
 
-        bankManager = spy(new BankManager(fileManager, true));
-        doReturn(folder).when(bankManager).getFolder();
+        BankManager spyManager = spy(new BankManager(fileManager, true));
+        doReturn(folder).when(spyManager).getFolder();
 
-        bankManager.loadBanks();
+        spyManager.loadBanks();
 
-        assertTrue(bankManager.getBanks().isEmpty());
+        assertTrue(spyManager.getBanks().isEmpty());
     }
 
+    // -----------------------------
+    // saveBank
+    // -----------------------------
     @Test
     void testSaveBank() {
         Bank bank = new Bank();
         bank.setName("Mono");
 
-        ArgumentCaptor<String> pathCaptor = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<String> pathCaptor =
+                ArgumentCaptor.forClass(String.class);
 
         bankManager.saveBank(bank);
 
-        verify(fileManager).saveAsJson(pathCaptor.capture(), eq(bank));
+        verify(fileManager)
+                .saveAsJson(pathCaptor.capture(), eq(bank));
 
         String path = pathCaptor.getValue();
         assertTrue(path.contains("Mono.json"));
     }
 
+    // -----------------------------
+    // saveAllBank
+    // -----------------------------
     @Test
     void testSaveAllBanks() {
         Bank b1 = new Bank();
@@ -118,13 +124,18 @@ class BankManagerTest {
 
         bankManager.saveAllBank();
 
-        verify(fileManager, times(2)).saveAsJson(anyString(), any(Bank.class));
+        verify(fileManager, times(2))
+                .saveAsJson(anyString(), any(Bank.class));
     }
 
+    // -----------------------------
+    // конструктор НЕ викликає loadBanks
+    // -----------------------------
     @Test
     void testConstructorSkipLoad() {
-        BankManager spyManager = spy(new BankManager(fileManager, true));
+        BankManager spyManager =
+                spy(new BankManager(fileManager, true));
 
-        verify(spyManager, times(0)).loadBanks();
+        verify(spyManager, never()).loadBanks();
     }
 }

@@ -25,7 +25,6 @@ class HelpCommandTest {
 
     @Test
     void testExecute_PrintsAllCommands() {
-        // mock commands
         Command cmd1 = mock(Command.class);
         Command cmd2 = mock(Command.class);
 
